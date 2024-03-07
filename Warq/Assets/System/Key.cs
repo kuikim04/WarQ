@@ -6,6 +6,7 @@ public abstract class Key
 
     public const string KEY_COIN = "coin";
     public const string KEY_DIAMOND = "diamond";
+    public const string KEY_DAY = "LoginDate";
 
 
 }

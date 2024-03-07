@@ -10,9 +10,18 @@ public class SoundManager : MonoBehaviour
 
     [SerializeField] private AudioMixer audioMixer;
 
+    [Header("Audio Source")]
     [SerializeField] private AudioSource mainAudio;
     [SerializeField] private AudioSource musicAudio;
     [SerializeField] private AudioSource efxAudio;
+
+    [Header("Audio Clip")]
+
+    [Header("Prefab")]
+    public GameObject SoundPrefab;
+    List<GameObject> soundEffectPool = new();
+
+    private Transform contents;
 
     private void Awake()
     {
@@ -25,28 +34,25 @@ public class SoundManager : MonoBehaviour
             DontDestroyOnLoad(gameObject);
         }
 
+        if (!contents)
+        {
+            contents = new GameObject("Contents").transform;
+            contents.SetParent(transform);
+        }
+    }
+    private void Start()
+    {
         if (PlayerPrefs.HasKey("MusicVolume"))
         {
             LoadAllSoundSetting();
         }
         else
         {
-            float initialVolume = 0.5f;
+            SetVolumeFromPrefs();
 
-            audioMixer.SetFloat("MasterVolume", Mathf.Log10(initialVolume) * 20);
-            audioMixer.SetFloat("MusicVolume", Mathf.Log10(initialVolume) * 20);
-            audioMixer.SetFloat("SFXVolume", Mathf.Log10(initialVolume) * 20);
-
-            mainAudio.volume = initialVolume;
-            musicAudio.volume = initialVolume;
-            efxAudio.volume = initialVolume;
-
-            PlayerPrefs.SetFloat("MasterVolume", initialVolume);
-            PlayerPrefs.SetFloat("MusicVolume", initialVolume);
-            PlayerPrefs.SetFloat("SFXVolume", initialVolume);
-            PlayerPrefs.Save();
         }
     }
+
     private void LoadAllSoundSetting()
     {
         float masterVolume = PlayerPrefs.GetFloat("MasterVolume");
@@ -60,5 +66,22 @@ public class SoundManager : MonoBehaviour
         mainAudio.volume = musicVolume;
         musicAudio.volume = musicVolume;
         efxAudio.volume = sfxVolume;
+    }
+    private void SetVolumeFromPrefs()
+    {
+        if (PlayerPrefs.HasKey("MusicVolume"))
+        {
+            float audioVolume = PlayerPrefs.GetFloat("MasterVolume");
+            float musicVolume = PlayerPrefs.GetFloat("MusicVolume");
+            float sfxVolume = PlayerPrefs.GetFloat("SFXVolume");
+
+            audioMixer.SetFloat("MasterVolume", Mathf.Log10(audioVolume) * 20);
+            audioMixer.SetFloat("MusicVolume", Mathf.Log10(musicVolume) * 20);
+            audioMixer.SetFloat("SFXVolume", Mathf.Log10(sfxVolume) * 20);
+
+            mainAudio.volume = audioVolume;
+            musicAudio.volume = musicVolume;
+            efxAudio.volume = sfxVolume;
+        }
     }
 }

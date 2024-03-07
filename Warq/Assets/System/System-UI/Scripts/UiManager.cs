@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
@@ -8,13 +9,23 @@ public class UiManager : MonoBehaviour
 {
     [SerializeField] private TextMeshProUGUI nameText;
     [SerializeField] private TextMeshProUGUI lvText;
+    [SerializeField] private TextMeshProUGUI timeText;
+
     [SerializeField] private Image expFill;
 
     [SerializeField] private GameObject joyStick;
     private void Start()
     {
-        if(PlayerPrefs.HasKey(Key.KEY_PLAYERNAME) && PlayerPrefs.HasKey(Key.KEY_GETSTARTERPACK))
+        if (PlayerPrefs.HasKey(Key.KEY_PLAYERNAME) && PlayerPrefs.HasKey(Key.KEY_GETSTARTERPACK))
             Initialize();
+    }
+    private void OnEnable()
+    {
+        TimeScripts.OnDayChanged += RewardCheck;
+    }
+    private void OnDisable()
+    {
+        TimeScripts.OnDayChanged -= RewardCheck;
     }
 
     public void Initialize()
@@ -39,5 +50,22 @@ public class UiManager : MonoBehaviour
     {
         if (PlayerPrefs.HasKey(Key.KEY_PLAYERNAME) && PlayerPrefs.HasKey(Key.KEY_GETSTARTERPACK))
             Initialize();
+
+        if (TimeScripts.Instance.HasDayChanged())
+        {
+            Debug.Log("Day has changed!");
+            TimeScripts.OnDayChanged?.Invoke();
+        }
+
+        if (TimeScripts.Instance.IsTimeLodaed)
+        {
+            DateTime currentDateTime = TimeScripts.Instance.GetCurrentDateTime();
+            timeText.text = $"Version: {Application.version} \n{currentDateTime}"; ;
+        }
+    }
+
+    public void RewardCheck()
+    {
+        Debug.Log("Diary Reward!!");
     }
 }

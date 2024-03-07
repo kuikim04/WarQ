@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Windows;
 
 public class PlayerController : MonoBehaviour
 {
@@ -8,6 +9,8 @@ public class PlayerController : MonoBehaviour
     private PlayerInput playerInput;
 
     [SerializeField] private float speed;
+    [SerializeField] private AudioSource audioSource;
+    [SerializeField] private AudioClip walkSound;
 
     private void Awake()
     {
@@ -27,16 +30,16 @@ public class PlayerController : MonoBehaviour
     private void Update()
     {
         Vector2 input = playerInput.Input.Move.ReadValue<Vector2>();
+        bool isWalking = input.magnitude > 0;
 
-
-
+        if (isWalking && !audioSource.isPlaying)
+        {
+            audioSource.PlayOneShot(walkSound);
+        }
         animator.SetFloat("xInput", input.x);
         animator.SetFloat("yInput", input.y);
 
         GetComponent<Rigidbody2D>().velocity = speed * input;
-
-        Debug.Log(input.x);
-        Debug.Log(input.y); 
     }
-
+  
 }
