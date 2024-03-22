@@ -1,0 +1,62 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7fdf71d4f9100df4399671d23716ea79, type: 3}
+  m_Name: CHA06-Stat
+  m_EditorClassIdentifier: 
+  NamePlayer: QueenMeme
+  IDCharacter: CHA06
+  Cost: 0
+  CoolDownTime: 0
+  DetailCharacter1: 
+  DetailCharacter2: 
+  ImageCharacter: {fileID: -8246775873676257026, guid: 119efe212ff278b47b971bf26af9af58,
+    type: 3}
+  CharacterPrefab: {fileID: 8587353891279373803, guid: d1fa20f49bd32d5408922acb2ce43cdb,
+    type: 3}
+  CharacterProfile: {fileID: 5189071942832347857, guid: b04b054333a096b4aba966bf1f2313d4,
+    type: 3}
+  GachaCharacter: {fileID: 5737374580447613472, guid: 1933188bc78692341a74b948f9e794d7,
+    type: 3}
+  level: 1
+  Maxlevel: 30
+  Exp: 0
+  CurrentExp: 0
+  ObjectType: 1
+  CharacterElement: 2
+  CareerCharacter: 1
+  CharacterTier: 2
+  MaxHealthPoints: 3000
+  AttackPoints: 100
+  DefensePoints: 300
+  AttackResistance: 50
+  SpeedWalk: 0.5
+  SpeedAttack: 1
+  MaxEnergyUniqSkill: 100
+  EnergyRegenRate: 5
+  EffectHitRate: 0
+  EffectResistance: 20
+  CriticalRate: 0
+  CriticalDamage: 0
+  CriticalResistance: 20
+  BonusMaxHealthPoints: 0
+  BonusAttackPoints: 0
+  BonusDefensePoints: 0
+  BonusAttackResistance: 0
+  BonusSpeedWalk: 0
+  BonusSpeedAttack: 0
+  BonusMaxEnergyUniqSkill: 0
+  BonusEnergyRegenRate: 0
+  BonusEffectHitRate: 0
+  BonusEffectResistance: 0
+  BonusCriticalRate: 0
+  BonusCriticalDamage: 0
+  BonusCriticalResistance: 0

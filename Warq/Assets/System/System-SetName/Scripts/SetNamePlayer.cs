@@ -8,6 +8,7 @@ public class SetNamePlayer : MonoBehaviour
 {
     [SerializeField] private UiManager uiManager;
 
+    [SerializeField] private GameObject Player;
     [SerializeField] private GameObject setNamePanel;
     [SerializeField] private GameObject rewardPanel;
 
@@ -41,22 +42,29 @@ public class SetNamePlayer : MonoBehaviour
     }
     public void SetNameButton()
     {
+        SoundManager.Instance.OnClickSound();
+
         DataCenter.instance.GetPlayerData().namePlayer = nameSet;
         DataCenter.instance.SaveName();
 
         setNamePanel.SetActive(false);
         rewardPanel.SetActive(true);
+        Player.SetActive(true);
     }
 
     public void SetNameValue(string value)
     {
+        SoundManager.Instance.OnTypeSound();
+
         nameSet = value;
     }  
 
     private void ClamReward()
     {
-        DataCenter.instance.IncreaseCoin(100);
-        DataCenter.instance.IncreaseDiamond(100);
+        SoundManager.Instance.OnClickSound();
+
+        DataCenter.instance.IncreaseCoin(50000);
+        DataCenter.instance.IncreaseDiamond(100000);
 
         PlayerPrefs.SetString(Key.KEY_GETSTARTERPACK,"");
         foreach (GameObject go in inFoPanel)

@@ -6,16 +6,10 @@ using UnityEngine;
 public class DataCenter : MonoBehaviour
 {
     public static DataCenter instance;
-    [SerializeField] private PlayerScriptableData data;
-    public float MaxExp
-    {
-        get { return CalculateMaxExp(data.Level); }
-    }
 
-    private float CalculateMaxExp(int level)
-    {
-        return level * 100.0f; 
-    }
+    [SerializeField] private PlayerScriptableData data;
+    [SerializeField] private CharacterStat characterData;
+
     private void Awake()
     {
         if (DataCenter.instance)
@@ -24,17 +18,25 @@ public class DataCenter : MonoBehaviour
         }
         DontDestroyOnLoad(gameObject);
         instance = this;
-
-        if (data == null)
-        {
-            data = ScriptableObject.CreateInstance<PlayerScriptableData>();
-        }
-
-        Debug.Log(MaxExp);
     }
     public PlayerScriptableData GetPlayerData()
     {
         return data;
+    }
+
+    public int GetPlayerCoinData()
+    {
+        return data.Coin;
+    }
+
+    public int GetPlayerDiamondData()
+    {
+        return data.Diamond;
+    }
+
+    public CharacterStat GetCharacterStatData()
+    {
+        return characterData;
     }
 
     #region Name

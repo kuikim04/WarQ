@@ -1,0 +1,62 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7fdf71d4f9100df4399671d23716ea79, type: 3}
+  m_Name: CHA07-Stat
+  m_EditorClassIdentifier: 
+  NamePlayer: S-Class
+  IDCharacter: CHA07
+  Cost: 0
+  CoolDownTime: 0
+  DetailCharacter1: 
+  DetailCharacter2: 
+  ImageCharacter: {fileID: -5732552106055788427, guid: fe59b186bd6501f469662624263ec625,
+    type: 3}
+  CharacterPrefab: {fileID: 3416077382247321849, guid: c4b4dd7c8a9536f4ebf35f5581c04a8f,
+    type: 3}
+  CharacterProfile: {fileID: 5880342178390285237, guid: 02cd27eb69f4e4b40a157bf77205323e,
+    type: 3}
+  GachaCharacter: {fileID: 1202356151251858773, guid: 78694466f139d27478130c073f0f76e9,
+    type: 3}
+  level: 1
+  Maxlevel: 30
+  Exp: 0
+  CurrentExp: 0
+  ObjectType: 1
+  CharacterElement: 4
+  CareerCharacter: 6
+  CharacterTier: 2
+  MaxHealthPoints: 1000
+  AttackPoints: 200
+  DefensePoints: 50
+  AttackResistance: 0
+  SpeedWalk: 2
+  SpeedAttack: 0.5
+  MaxEnergyUniqSkill: 70
+  EnergyRegenRate: 5
+  EffectHitRate: 0
+  EffectResistance: 0
+  CriticalRate: 20
+  CriticalDamage: 15
+  CriticalResistance: 0
+  BonusMaxHealthPoints: 0
+  BonusAttackPoints: 0
+  BonusDefensePoints: 0
+  BonusAttackResistance: 0
+  BonusSpeedWalk: 0
+  BonusSpeedAttack: 0
+  BonusMaxEnergyUniqSkill: 0
+  BonusEnergyRegenRate: 0
+  BonusEffectHitRate: 0
+  BonusEffectResistance: 0
+  BonusCriticalRate: 0
+  BonusCriticalDamage: 0
+  BonusCriticalResistance: 0

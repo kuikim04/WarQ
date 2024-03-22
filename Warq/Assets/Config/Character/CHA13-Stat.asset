@@ -1,0 +1,62 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7fdf71d4f9100df4399671d23716ea79, type: 3}
+  m_Name: CHA13-Stat
+  m_EditorClassIdentifier: 
+  NamePlayer: Knight
+  IDCharacter: CHA13
+  Cost: 0
+  CoolDownTime: 0
+  DetailCharacter1: 
+  DetailCharacter2: 
+  ImageCharacter: {fileID: -5138594789456230905, guid: 595e6cdbd22478c409b1e2ed50d8bb54,
+    type: 3}
+  CharacterPrefab: {fileID: 1022555104515365272, guid: fe2b17df8b12c60489a836a849a7dda9,
+    type: 3}
+  CharacterProfile: {fileID: 5685572095800800550, guid: b899b648ff6b7be4a83fbbbe3711a6d2,
+    type: 3}
+  GachaCharacter: {fileID: 7680329234751819397, guid: 8ff414ae176bd0c4dad995b32b0ca939,
+    type: 3}
+  level: 1
+  Maxlevel: 30
+  Exp: 0
+  CurrentExp: 0
+  ObjectType: 1
+  CharacterElement: 3
+  CareerCharacter: 1
+  CharacterTier: 1
+  MaxHealthPoints: 2000
+  AttackPoints: 50
+  DefensePoints: 200
+  AttackResistance: 50
+  SpeedWalk: 0.5
+  SpeedAttack: 1
+  MaxEnergyUniqSkill: 90
+  EnergyRegenRate: 5
+  EffectHitRate: 0
+  EffectResistance: 5
+  CriticalRate: 0
+  CriticalDamage: 0
+  CriticalResistance: 5
+  BonusMaxHealthPoints: 0
+  BonusAttackPoints: 0
+  BonusDefensePoints: 0
+  BonusAttackResistance: 0
+  BonusSpeedWalk: 0
+  BonusSpeedAttack: 0
+  BonusMaxEnergyUniqSkill: 0
+  BonusEnergyRegenRate: 0
+  BonusEffectHitRate: 0
+  BonusEffectResistance: 0
+  BonusCriticalRate: 0
+  BonusCriticalDamage: 0
+  BonusCriticalResistance: 0

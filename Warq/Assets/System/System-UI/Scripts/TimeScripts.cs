@@ -48,7 +48,6 @@ public class TimeScripts : MonoBehaviour
     IEnumerator GetRealDateTimeFromAPI()
     {
         UnityWebRequest webRequest = UnityWebRequest.Get(API_URL);
-        Debug.Log("getting real datetime...");
 
         yield return webRequest.SendWebRequest();
 

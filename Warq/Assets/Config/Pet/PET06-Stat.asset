@@ -1,0 +1,55 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7fdf71d4f9100df4399671d23716ea79, type: 3}
+  m_Name: PET06-Stat
+  m_EditorClassIdentifier: 
+  NamePlayer: Bunme
+  IDCharacter: PET06
+  DetailCharacter1: 
+  DetailCharacter2: 
+  ImageCharacter: {fileID: 21300000, guid: 51088ce17464dca4e90b56ecce868e84, type: 3}
+  GachaCharacter: {fileID: 5657371803998184724, guid: fe6ff8f7f7e3c4e4ca276aeda1349353,
+    type: 3}
+  level: 1
+  Maxlevel: 30
+  Exp: 0
+  CurrentExp: 0
+  ObjectType: 2
+  CharacterElement: 0
+  CareerCharacter: 0
+  CharacterTier: 1
+  MaxHealthPoints: 0
+  AttackPoints: 0
+  DefensePoints: 0
+  AttackResistance: 0
+  SpeedWalk: 0
+  SpeedAttack: 0
+  MaxEnergyUniqSkill: 0
+  EnergyRegenRate: 0
+  EffectHitRate: 0
+  EffectResistance: 0
+  CriticalRate: 0
+  CriticalDamage: 0
+  CriticalResistance: 0
+  BonusMaxHealthPoints: 10
+  BonusAttackPoints: 0
+  BonusDefensePoints: 0
+  BonusAttackResistance: 0
+  BonusSpeedWalk: 0
+  BonusSpeedAttack: 0
+  BonusMaxEnergyUniqSkill: 0
+  BonusEnergyRegenRate: 0
+  BonusEffectHitRate: 0
+  BonusEffectResistance: 0
+  BonusCriticalRate: 0
+  BonusCriticalDamage: 0
+  BonusCriticalResistance: 0

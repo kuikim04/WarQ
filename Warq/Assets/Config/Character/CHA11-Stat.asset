@@ -1,0 +1,62 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7fdf71d4f9100df4399671d23716ea79, type: 3}
+  m_Name: CHA11-Stat
+  m_EditorClassIdentifier: 
+  NamePlayer: Jake
+  IDCharacter: CHA11
+  Cost: 0
+  CoolDownTime: 0
+  DetailCharacter1: 
+  DetailCharacter2: 
+  ImageCharacter: {fileID: -443223390034576298, guid: afe8e63c1f88dd34bbf80188c2fb4b15,
+    type: 3}
+  CharacterPrefab: {fileID: 227423810638735847, guid: b14fcb273a977b94e9acf011276174f3,
+    type: 3}
+  CharacterProfile: {fileID: 1211117338789104395, guid: 6a929a1781cf1014888df9e7194430e1,
+    type: 3}
+  GachaCharacter: {fileID: 4832245801613519513, guid: 9b4331412702ca04dba3a9c8cbcdf4f1,
+    type: 3}
+  level: 1
+  Maxlevel: 30
+  Exp: 0
+  CurrentExp: 0
+  ObjectType: 1
+  CharacterElement: 2
+  CareerCharacter: 5
+  CharacterTier: 1
+  MaxHealthPoints: 900
+  AttackPoints: 100
+  DefensePoints: 30
+  AttackResistance: 0
+  SpeedWalk: 0.5
+  SpeedAttack: 4
+  MaxEnergyUniqSkill: 100
+  EnergyRegenRate: 5
+  EffectHitRate: 0
+  EffectResistance: 10
+  CriticalRate: 5
+  CriticalDamage: 5
+  CriticalResistance: 0
+  BonusMaxHealthPoints: 0
+  BonusAttackPoints: 0
+  BonusDefensePoints: 0
+  BonusAttackResistance: 0
+  BonusSpeedWalk: 0
+  BonusSpeedAttack: 0
+  BonusMaxEnergyUniqSkill: 0
+  BonusEnergyRegenRate: 0
+  BonusEffectHitRate: 0
+  BonusEffectResistance: 0
+  BonusCriticalRate: 0
+  BonusCriticalDamage: 0
+  BonusCriticalResistance: 0

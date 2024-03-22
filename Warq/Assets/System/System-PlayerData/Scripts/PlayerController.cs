@@ -16,6 +16,10 @@ public class PlayerController : MonoBehaviour
     {
         animator = GetComponent<Animator>();
         playerInput = new PlayerInput();
+
+        if(PlayerPrefs.HasKey(Key.KEY_PLAYERNAME))
+            gameObject.SetActive(true);
+        else gameObject.SetActive(false);
     }
     private void OnEnable()
     {

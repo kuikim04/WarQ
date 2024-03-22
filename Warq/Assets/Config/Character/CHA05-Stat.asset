@@ -1,0 +1,62 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7fdf71d4f9100df4399671d23716ea79, type: 3}
+  m_Name: CHA05-Stat
+  m_EditorClassIdentifier: 
+  NamePlayer: Mika
+  IDCharacter: CHA05
+  Cost: 0
+  CoolDownTime: 0
+  DetailCharacter1: 
+  DetailCharacter2: 
+  ImageCharacter: {fileID: 8256055224740595165, guid: dc09ebeaba17b1d47b577284c5a147e9,
+    type: 3}
+  CharacterPrefab: {fileID: 1997834943534525212, guid: eac72c3d91228d140a3dd821b4e3c0d6,
+    type: 3}
+  CharacterProfile: {fileID: 793072405487128871, guid: 6d8d8c54151356548afd5ef923f0cdf6,
+    type: 3}
+  GachaCharacter: {fileID: 3385287494894919707, guid: ae410500a29d00145a803b52c4f2b3f8,
+    type: 3}
+  level: 1
+  Maxlevel: 30
+  Exp: 0
+  CurrentExp: 0
+  ObjectType: 1
+  CharacterElement: 0
+  CareerCharacter: 3
+  CharacterTier: 2
+  MaxHealthPoints: 1500
+  AttackPoints: 0
+  DefensePoints: 70
+  AttackResistance: 50
+  SpeedWalk: 1
+  SpeedAttack: 0
+  MaxEnergyUniqSkill: 70
+  EnergyRegenRate: 5
+  EffectHitRate: 0
+  EffectResistance: 10
+  CriticalRate: 0
+  CriticalDamage: 0
+  CriticalResistance: 20
+  BonusMaxHealthPoints: 0
+  BonusAttackPoints: 0
+  BonusDefensePoints: 0
+  BonusAttackResistance: 0
+  BonusSpeedWalk: 0
+  BonusSpeedAttack: 0
+  BonusMaxEnergyUniqSkill: 0
+  BonusEnergyRegenRate: 0
+  BonusEffectHitRate: 0
+  BonusEffectResistance: 0
+  BonusCriticalRate: 0
+  BonusCriticalDamage: 0
+  BonusCriticalResistance: 0

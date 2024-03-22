@@ -1,0 +1,62 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7fdf71d4f9100df4399671d23716ea79, type: 3}
+  m_Name: CHA10-Stat
+  m_EditorClassIdentifier: 
+  NamePlayer: FrameX
+  IDCharacter: CHA10
+  Cost: 0
+  CoolDownTime: 0
+  DetailCharacter1: 
+  DetailCharacter2: 
+  ImageCharacter: {fileID: 3327708793715736115, guid: a165254997503d242b8eff7d5f7efe10,
+    type: 3}
+  CharacterPrefab: {fileID: 4237450645744000684, guid: d0068646078fae046bf2133a2d523aff,
+    type: 3}
+  CharacterProfile: {fileID: 8730748427844208234, guid: d10f8b8aeff647244af802436bf6f329,
+    type: 3}
+  GachaCharacter: {fileID: 1897345486103068662, guid: 256900e1be98e6540bcb0f7068d39c96,
+    type: 3}
+  level: 1
+  Maxlevel: 30
+  Exp: 0
+  CurrentExp: 0
+  ObjectType: 1
+  CharacterElement: 1
+  CareerCharacter: 2
+  CharacterTier: 1
+  MaxHealthPoints: 100
+  AttackPoints: 1000
+  DefensePoints: 0
+  AttackResistance: 0
+  SpeedWalk: 2
+  SpeedAttack: 0
+  MaxEnergyUniqSkill: 0
+  EnergyRegenRate: 0
+  EffectHitRate: 0
+  EffectResistance: 0
+  CriticalRate: 0
+  CriticalDamage: 0
+  CriticalResistance: 0
+  BonusMaxHealthPoints: 0
+  BonusAttackPoints: 0
+  BonusDefensePoints: 0
+  BonusAttackResistance: 0
+  BonusSpeedWalk: 0
+  BonusSpeedAttack: 0
+  BonusMaxEnergyUniqSkill: 0
+  BonusEnergyRegenRate: 0
+  BonusEffectHitRate: 0
+  BonusEffectResistance: 0
+  BonusCriticalRate: 0
+  BonusCriticalDamage: 0
+  BonusCriticalResistance: 0

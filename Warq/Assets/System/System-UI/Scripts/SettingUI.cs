@@ -8,22 +8,22 @@ public class SettingUI : MonoBehaviour
 {
     [SerializeField] private GameObject noticeDeleteAccount;
     [SerializeField] private Button  deleteAccountBtn;
+    [SerializeField] private Button openDeleteAccountBtn;
 
     private void OnEnable()
     {
         noticeDeleteAccount.SetActive(false);
         deleteAccountBtn.onClick.RemoveAllListeners();
+        openDeleteAccountBtn.onClick.AddListener(DeleteAccountButton);
     }
     private void OnDisable()
     {
         noticeDeleteAccount.SetActive(false);
         deleteAccountBtn.onClick.RemoveAllListeners();
-    }
-
-    void Update()
-    {
+        openDeleteAccountBtn.onClick.RemoveAllListeners();
 
     }
+
     public void DeleteAccountButton()
     {
         noticeDeleteAccount.SetActive(true);
@@ -32,6 +32,9 @@ public class SettingUI : MonoBehaviour
 
     public void DeleteAccount()
     {
+        DataCenter.instance.GetPlayerData().ResetValues();
+        DataCenter.instance.GetCharacterStatData().ResetValues();
+
         PlayerPrefs.DeleteAll();
         SceneManager.LoadScene(0);
     }

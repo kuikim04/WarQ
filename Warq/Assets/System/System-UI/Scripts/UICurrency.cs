@@ -5,8 +5,8 @@ using UnityEngine;
 
 public class UICurrency : MonoBehaviour
 {
-    [SerializeField] private TextMeshProUGUI coinText;
-    [SerializeField] private TextMeshProUGUI diamondText;
+    [SerializeField] private TextMeshProUGUI[] coinText;
+    [SerializeField] private TextMeshProUGUI[] diamondText;
 
     private void Update()
     {
@@ -15,12 +15,18 @@ public class UICurrency : MonoBehaviour
     }
     private void UpdateCoinText(int amount)
     {
-        coinText.text = FormatNumber(amount);
+        foreach (var coin in coinText)
+        {
+            coin.text = FormatNumber(amount);
+        }
     }
 
     private void UpdateDiamondText(int amount)
     {
-        diamondText.text = FormatNumber(amount);
+        foreach (var diamond in diamondText)
+        {
+            diamond.text = FormatNumber(amount);
+        }
     }
 
     private string FormatNumber(int number)

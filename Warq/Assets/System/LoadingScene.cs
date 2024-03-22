@@ -12,14 +12,14 @@ public class LoadingScene : MonoBehaviour
 
     private void Start()
     {
-        LoadLevel(1);
+        LoadLevel(Key.Scene_Home);
     }
-    public void LoadLevel(int sceneIndex)
+    public void LoadLevel(string sceneIndex)
     {
         StartCoroutine(LoadAsynchronously(sceneIndex));
     }
 
-    IEnumerator LoadAsynchronously(int sceneIndex)
+    IEnumerator LoadAsynchronously(string sceneIndex)
     {
         AsyncOperation operation = SceneManager.LoadSceneAsync(sceneIndex);
 

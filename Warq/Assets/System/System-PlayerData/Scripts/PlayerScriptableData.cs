@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "PlayerData", menuName = "Data", order = 1)]
+[CreateAssetMenu(fileName = "PlayerData", menuName = "Data/PlayerData")]
 public class PlayerScriptableData : ScriptableObject
 {
     public string namePlayer;
@@ -12,5 +12,16 @@ public class PlayerScriptableData : ScriptableObject
 
     public int Level = 1;
     public float exp;
-    public float currentExp;
+    public float currentExp; 
+    
+    
+    public void ResetValues()
+    {
+        namePlayer = "";
+        Coin = 0;
+        Diamond = 0;
+        Level = 1;
+        exp = 0f;
+        currentExp = 0f;
+    }
 }
